@@ -1,42 +1,20 @@
-# sv
+# SvelteKit Starter Project
+This is a base starter project in SvelteKit that can be used as a template for future projects.
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+## CSS
+The style sheets have been broken up for clarity and ease of use. The app.css has imports of all the other sheets and is the only one referenced in the project layout. The reset is basically a copy of Andy Bell's CSS reset. Typography and Forms have the styles for the copy, headings, form elements, and buttons.
 
-## Creating a project
+### Variables
+The variables style sheet contains size and space variables from Utopia.fyi. It also contains some default fonts from ModernFontStacks.com (no downloading needed). There are also variables for light and dark neutral colors and a primary and secondary color. For colors, it's best to use a few colors and create variation with opacity.
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project
-npx sv create my-app
-```
-
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-npx sv@0.17.0 create --template minimal --no-types --add prettier eslint sveltekit-adapter="adapter:netlify" --install npm starter-project
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+### Layout
+The layout style sheet has a few useful layout options that commonly occur.
+* .container is used on every page to keep content a regular distance off the edge.
+* .auto-grid will take a set of grid items (usually product cards) and display them to automatically fit the space with uniform widths regardless of screen size.
+* .flex-group will automatically cluster a group of items (like filter chips) that don't need uniform width, but should be grouped together and able to wrap to the next row to prevent overflow.
+* .stack (and variations) are used to provide regularly spaced stacks of elements.
+* The sidebar layout uses a few different classes
+    * .with-sidebar defines the container that has a sidebar and other content.
+    * .sidebar is a child inside the .with-sidebar element and will stay the same size until it automatically switches to be on top of the other content at certain screen sizes (no media query required).
+    * .not-sidebar is the child that contains the main content. Its size will automatically adjust to fill the width.
+* .switcher will automatically switch from row to column depending on the screen size, also without media queries.
