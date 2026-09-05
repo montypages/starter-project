@@ -1,6 +1,20 @@
 # SvelteKit Starter Project
 This is a base starter project in SvelteKit that can be used as a template for future projects.
 
+## New Project
+
+1. Clone starter
+2. Rename project
+3. Install dependencies
+4. Update site configuration
+5. Add branding/fonts
+6. Configure environment variables
+7. Start development server
+8. Build pages
+9. Add optional features as needed
+10. Deploy to Netlify
+11. Transfer ownership to client
+
 ## CSS
 The style sheets have been broken up for clarity and ease of use. The app.css has imports of all the other sheets and is the only one referenced in the project layout. The reset is basically a copy of Andy Bell's CSS reset. Typography and Forms have the styles for the copy, headings, form elements, and buttons.
 
