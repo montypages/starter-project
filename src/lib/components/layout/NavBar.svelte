@@ -1,16 +1,17 @@
 <script lang="ts">
     import logo from '$lib/assets/favicon.svg'
     import Button from '../ui/Button.svelte';
+    import { resolve } from '$app/paths';
 
 </script>
 
 <nav>
     <div class="logo">
-        <a href="/"><img src={logo} alt="logo"></a>
+        <a href={resolve("/")}><img src={logo} alt="logo"></a>
     </div>
     <ul class="nav-links" role='list'>
-        <li><a>Events</a></li>
-        <li><a>About</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">About</a></li>
         <li><Button text="Contact" --size="var(--size--1)" /></li>
     </ul>
 </nav>
