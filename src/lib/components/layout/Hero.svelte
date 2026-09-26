@@ -5,7 +5,7 @@
 </script>
 
 <section id="hero">
-    <div class="container hero stack">
+    <div class="container hero">
         <img {src} {alt}>
         <h1>{title}</h1>
         <p class="hero-text">{text}</p>
@@ -20,6 +20,16 @@
         align-items: center;
         justify-content: center;
         min-height: 65dvh;
+    }
+
+    .hero > * + * {
+        margin-top: var(--space-2xs);
+    }
+
+    h1, p {
+        text-align: center;
+        text-wrap: balance;
+        margin: 0;
     }
 
 </style>

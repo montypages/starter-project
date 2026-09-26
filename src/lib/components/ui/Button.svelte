@@ -14,6 +14,7 @@
         opacity: 0.85;
         scale: 0.99;
         transition: opacity 0.2s, scale 0.2s;
+        color: var(--clr-dark);
     }
 
     button:hover {
