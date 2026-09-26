@@ -4,6 +4,8 @@
 	--font-body: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 	--font-display: Rockwell, 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', 'Sitka Small', serif;
 
+    /* Size variables from https://utopia.fyi/ */
+
 	--size--1: clamp(0.75rem, 0.7159rem + 0.1515vw, 0.8333rem);
 	--size-0: clamp(1.125rem, 1.0739rem + 0.2273vw, 1.25rem);
 	--size-1: clamp(1.6875rem, 1.6108rem + 0.3409vw, 1.875rem);
@@ -31,10 +33,6 @@
     --space-l-xl: clamp(2.25rem, 1.6364rem + 2.7273vw, 3.75rem);
     --space-xl-2xl: clamp(3.375rem, 2.7102rem + 2.9545vw, 5rem);
     --space-2xl-3xl: clamp(4.5rem, 3.2727rem + 5.4545vw, 7.5rem);
-
-
-
-
 
 	--clr-light: #ddd;
 	--clr-dark: #333;

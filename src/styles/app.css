@@ -4,3 +4,8 @@
 @import './layout.css';
 @import './forms.css';
 @import './utilities.css';
+
+body {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
