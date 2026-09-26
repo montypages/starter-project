@@ -28,6 +28,6 @@
 </div>
 
 <div class="container">
-	<Button text="Open Modal" onclick={() => (showModal = true)} />
 	<ContactForm />
+	<Button text="Open Modal" onclick={() => (showModal = true)} />
 </div>

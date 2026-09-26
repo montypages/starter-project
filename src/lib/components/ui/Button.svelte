@@ -1,9 +1,8 @@
 <script lang="ts">
-	type Props = {
+	import type { HTMLButtonAttributes } from 'svelte/elements';
+
+	type Props = HTMLButtonAttributes & {
 		text?: string;
-		type?: 'button' | 'submit' | 'reset';
-		onclick?: (event: MouseEvent) => void;
-		disabled?: boolean;
 		secondary?: boolean;
 	};
 
@@ -12,11 +11,12 @@
 		type = 'button',
 		onclick,
 		disabled = false,
-		secondary = false
+		secondary = false,
+		...rest
 	}: Props = $props();
 </script>
 
-<button {type} {onclick} {disabled} class:secondary>
+<button {...rest} {type} {onclick} {disabled} class:secondary>
 	{text}
 </button>
 

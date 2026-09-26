@@ -29,7 +29,10 @@
     h1, p {
         text-align: center;
         text-wrap: balance;
-        margin: 0;
+    }
+
+    h1 {
+        text-box: trim-both cap alphabetic;
     }
 
 </style>
