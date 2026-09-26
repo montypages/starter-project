@@ -17,6 +17,7 @@
 		"@sveltejs/kit": "^2.63.0",
 		"@sveltejs/vite-plugin-svelte": "^7.1.2",
 		"@types/node": "^24",
+		"@types/nodemailer": "^8.0.2",
 		"eslint": "^10.4.1",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.19.0",
@@ -26,5 +27,8 @@
 		"svelte": "^5.56.1",
 		"typescript": "^6.0.3",
 		"vite": "^8.0.16"
+	},
+	"dependencies": {
+		"nodemailer": "^10.0.10"
 	}
 }

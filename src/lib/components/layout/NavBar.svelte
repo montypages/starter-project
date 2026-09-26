@@ -11,7 +11,7 @@
     <ul class="nav-links" role='list'>
         <li><a>Events</a></li>
         <li><a>About</a></li>
-        <li><Button text="Contact" /></li>
+        <li><Button text="Contact" --size="var(--size--1)" /></li>
     </ul>
 </nav>
 
