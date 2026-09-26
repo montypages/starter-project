@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import logo from '$lib/assets/favicon.svg'
 
     let { src=logo, alt="logo", title="Card Title", text="Here are the important things you need to know.", href="#", linkText="Find out more", primary=false, secondary=false } = $props();

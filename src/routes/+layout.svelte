@@ -17,7 +17,7 @@
 </header>
 
 
-<main>
+<main class="stack large">
 	{@render children()}
 </main>
 

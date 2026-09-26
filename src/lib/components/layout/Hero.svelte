@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import logo from '$lib/assets/favicon.svg'
 
     let { title="Hero Title", text="Here is a description of what this page is about", src=logo, alt="logo" } = $props();

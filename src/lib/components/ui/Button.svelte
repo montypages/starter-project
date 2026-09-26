@@ -1,8 +1,8 @@
-<script>
-    let { text='Text', type='button', onclick, disabled=false } = $props();
+<script lang="ts">
+    let { text='Text', type='button', onclick, disabled=false, secondary=false } = $props();
 </script>
 
-<button {type} {onclick} {disabled}>{text}</button>
+<button {type} {onclick} {disabled} class:secondary={secondary}>{text}</button>
 
 <style>
     button {
@@ -15,6 +15,10 @@
         scale: 0.99;
         transition: opacity 0.2s, scale 0.2s;
         color: var(--clr-dark);
+    }
+
+    .secondary {
+        background-color: var(--clr-secondary);
     }
 
     button:hover {

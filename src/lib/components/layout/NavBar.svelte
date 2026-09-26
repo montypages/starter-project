@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import logo from '$lib/assets/favicon.svg'
     import Button from '../ui/Button.svelte';
 
