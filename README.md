@@ -15,6 +15,29 @@ This is a base starter project in SvelteKit that can be used as a template for f
 10. Deploy to Netlify
 11. Transfer ownership to client
 
+### Cloning for a new project
+```
+git clone https://github.com/yourname/starter-project.git my-new-site
+
+cd my-new-site
+
+Remove-Item -Recurse -Force .git
+--or--
+rm -rf .git
+
+git init
+git add .
+git commit -m "Initial commit"
+```
+
+Create a new github repository
+
+```
+git remote add origin https://github.com/yourname/my-new-site.git
+git branch -M main
+git push -u origin main
+```
+
 ## CSS
 The style sheets have been broken up for clarity and ease of use. The app.css has imports of all the other sheets and is the only one referenced in the project layout. The reset is basically a copy of Andy Bell's CSS reset. Typography and Forms have the styles for the copy, headings, form elements, and buttons.
 
