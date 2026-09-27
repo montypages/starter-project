@@ -92,13 +92,13 @@
     
     /* Hamburger → X */
 	.menu-toggle[aria-expanded='true'] span:nth-child(1) {
-		transform: translateY(0.4rem) rotate(45deg);
+		transform: translateY(0.425rem) rotate(45deg);
 	}
 	.menu-toggle[aria-expanded='true'] span:nth-child(2) {
 		opacity: 0;
 	}
 	.menu-toggle[aria-expanded='true'] span:nth-child(3) {
-		transform: translateY(-0.4rem) rotate(-45deg);
+		transform: translateY(-0.425rem) rotate(-45deg);
 	} 
     
     /* Mobile */
