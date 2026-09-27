@@ -9,7 +9,7 @@
                 <h2>Trusted <span class="accent">Authority</span></h2>
                 <Button text="Contact" />
             </div>
-            <div class="switcher not-sidebar">
+            <div class="switcher not-sidebar" style="--min-card-width:170px">
                 <ul role='list'>
                     <li class="label">Links</li>
                     <li><a href="#">Events</a></li>

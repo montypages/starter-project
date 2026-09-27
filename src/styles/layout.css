@@ -65,14 +65,14 @@
 
 /* Auto-switching  list (especially helpful for 3-card sets */
 .switcher {
+  --min-card-width: 200px;
+  --card-qty: 3;
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
 .switcher > * {
-  --min-card-width: 200px;
-  --card-qty: 3;
   flex-grow: 1;
   flex-basis: calc((var(--min-card-width) * var(--card-qty) - 100%) * 999);
 }
