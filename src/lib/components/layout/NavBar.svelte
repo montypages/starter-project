@@ -2,12 +2,9 @@
 	import logo from '$lib/assets/favicon.svg';
 	import Button from '../ui/Button.svelte';
 	import { resolve } from '$app/paths';
-	import type { Pathname } from '$app/types';
 	let menuOpen = $state(false);
-	const pages: { name: string; href: Pathname }[] = [
-		{ name: 'Events', href: '/events' },
-		{ name: 'About', href: '/about' }
-	];
+    import { pages } from '$lib/data/navigation';
+
 	function closeMenu() {
 		menuOpen = false;
 	}
